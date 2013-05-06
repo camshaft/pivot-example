@@ -1,0 +1,32 @@
+style
+  body {
+    font-family: Helvetica, Arial, san-serif;
+    padding: 40px;
+  }
+  .btn {
+    background: #333;
+    padding: 10px;
+    color: white;
+    border: 0;
+  }
+  .red {
+    background: red;
+  }
+  .green {
+    background: green;
+  }
+  .blue {
+    background: blue;
+  }
+  .yellow {
+    background: yellow;
+  }
+
+h1
+  - if(features.welcomeMessage === "message1")
+    | Welcome!
+  - if(features.welcomeMessage === "message2")
+    | Hey there Friend!
+
+.login
+  button(class="btn #{features.loginButtonColor}") Login
