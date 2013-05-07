@@ -1,0 +1,12 @@
+style
+  .instance {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+- var users = ["cameron","scott","dave","nic","tim","dan","james","tyler","jared","brenden"];
+each user in users
+  div.instance
+    h2= user
+    iframe(src="/?user=#{user}", height="250px")
